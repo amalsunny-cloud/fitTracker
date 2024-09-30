@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTracker</title>
+    <link rel="shortcut icon" href="./images/fitness_2964514.png" type="image/x-icon" width="20px">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+
+<!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+
+    
+
+
+</head>
+<body style="font-family: 'PT Serif', serif; background-color: #f8f8f8;">
+
+  
+  <!-- Navbar -->
+  <section class="mb-3">
+    <nav class="navbar navbar-expand-md navbar-dark  fixed-top" style="background-color: #005e0e;">
+        <div class="container-fluid ms-4 d-flex justify-content-end">
+            <a class="navbar-brand fs-4"   href="#" data-mdb-tooltip-init title="FitTracker"><i class="fa-solid fa-dumbbell me-3" style="color: #FFD700;"></i>FitTracker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  " id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item pe-4 me-3 "><a class="nav-link " href="#home">Home</a></li>
+                    <li class="nav-item pe-4 me-3 "><a class="nav-link " href="#features">Features</a></li>
+                    <li class="nav-item pe-4 me-3 "><a class="nav-link" href="#workouts">Workouts</a></li>
+                    <li class="nav-item pe-4 me-3 "><a class="nav-link" href="#progress">Progress</a></li>
+                    <li class="nav-item pe-4 me-5 "><a class="nav-link" href="#community">Community</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+  
+
+
+
+<div class="toast-container position-fixed top-0 end-0 p-3 mt-5" style="z-index: 1500;">
+    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header d-flex justify-content-between">
+            <strong class="me-auto">FitTracker</strong>
+            <button type="button" class="btn-close ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body text-danger">
+            Unlock your full potential with fitTracker Premium!
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container my-5">
+<h1 class=" pt-5">Welcome to <span style="color: #3b542a;"><span style="color: #005e0e;">F</span>it<span style="color:#005e0e;">T</span>racker</span> – Your Ultimate Fitness Companion
+</h1>
+</div>
+<div class="container">
+    <p>At fitTracker, we believe that fitness is not just about working out; it’s about creating a lifestyle that integrates exercise, progress, and community support. Whether you’re just starting your fitness journey or looking to take your routine to the next level, fitTracker is designed to be your go-to resource for achieving your health and wellness goals.</p>
+</div>
+
+
+
+
+
+<!-- carousel -->
+
+<!-- Carousel -->
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div id="carouselExampleInterval" class="carousel slide w-100" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <div class="d-flex justify-content-center">
+            <img src="./images/mountainclimbers.jpg" class="w-50" alt="Man doing mountain climbers">
+            <img src="./images/pexels-jonathanborba-3076509.jpg" class="w-50" alt="Woman exercising">
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="d-flex justify-content-center">
+            <img src="./images/sport-fitness-exercise-pilates-face-man-body-man-body-man-men.jpg" class="w-50" alt="Man doing pilates">
+            <img src="./images/1109-squat2.webp" class="w-50" alt="Man doing squats">
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="d-flex justify-content-center">
+            <img src="./images/men-exercise-dumbbell.jpg" class="w-50" alt="Man exercising with dumbbells">
+            <img src="./images/How-to-Improve-Body-Strength-woman.jpg" class="w-50" alt="Woman doing push-ups">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+
+
+
+<section id="features" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 mt-4 link-success text-decoration-underline">Features</h2>
+        <div class="row g-5">
+            <div class="col-4">
+                <div class="card h-100 border-1 shadow-sm">
+                    <div class="card-body text-center">
+                       <i class="fa-solid fa-dumbbell fa-3x pt-2 " style="color: #FFD43B;"></i>
+                        <h5 class="card-title mt-3">Workout Planner</h5>
+                        <p class="card-text pb-3">Create and customize your workout routines with our extensive exercise database.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card h-100 border-1 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-chart-line fa-3x text-success mb-3  pt-2"></i>
+                        <h5 class="card-title">Progress Tracking</h5>
+                        <p class="card-text pb-3">Monitor your fitness progress with detailed charts and statistics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-1 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-3x text-info mb-3  pt-2"></i>
+                        <h5 class="card-title">Community Support</h5>
+                        <p class="card-text pb-3">Connect with other fitness enthusiasts, share tips, and stay motivated.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- progress -->
+ <section id="progress">
+ <div class="container-fluid d-flex justify-content-center ">
+ <h2 class="link-success text-decoration-underline">Statistics</h2>
+</div>
+<h5 class="d-flex justify-content-center mt-4 mb-1">Target Achieved :</h5>
+
+
+
+
+<div class="progress container w-25 d-flex justify-content-center my-4" role="progressbar" aria-label="progress centered label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar progress-bar-striped progress-bar-animated text-bg-warning" style="width: 100%">90%</div>
+</div>
+
+
+<div class="container-fluid d-flex justify-content-center">
+<ul class="list-unstyled">
+<li> <h5>Workout Frequency : 5/Week</h5></li>
+<li></li>
+    <ul class="list-unstyled"></ul>
+<li><h5>Avg. Workout Duration : 28mins.</h5></li>
+<li><h5>Types of Workout Performed : Strength Training , Cardio</h5></li>
+</ul>
+</div>
+</section>
+
+
+
+<!-- Workouts Section -->
+<section id="workouts" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 link-success text-decoration-underline">Popular Workouts</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://trainright.com/wp-content/uploads/2019/07/strength-training-squat.jpg" width="40%" class="card-img-top" alt="Strength Training">
+                    <div class="card-body ">
+                        <h5 class="card-title d-flex justify-content-center ">Strength Training</h5>
+                        <p class="card-text">Build muscle and increase strength with our curated strength workouts.</p>
+                        <a href="#" class="btn btn-primary d-grid btn-warning" data-bs-toggle="modal" data-bs-target="#workoutModal">View Workout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.1and1life.com/wp-content/uploads/2020/05/Man-doing-cardio-1024x682.jpg" width="40%" class="card-img-top" alt="Cardio Blast">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">Cardio Blast</h5>
+                        <p class="card-text">Improve your cardiovascular fitness with high-intensity cardio workouts.</p>
+                        <a href="#" class="btn btn-primary d-grid btn-warning" data-bs-toggle="modal" data-bs-target="#workoutModal">View Workout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://cdn10.phillymag.com/wp-content/uploads/sites/3/2019/03/breathing-and-meditation-main.jpg"  width="40%" class="card-img-top" alt="Yoga Flow">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">Yoga Flow</h5>
+                        <p class="card-text">Enhance flexibility and mindfulness with our yoga flow sequences.</p>
+                        <a href="#" class="btn btn-primary d-grid btn-warning" data-bs-toggle="modal" data-bs-target="#workoutModal">View Workout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ 
+
+
+
+
+
+<div class="container my-4 w-50 mb-5">
+  <h2 class="text-center text-decoration-underline mb-5" style="color: #005e0e;" >Guidelines</h2>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Strength Training
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><ul><li>Warm-Up: Begin with 5-10 minutes of light cardio to increase blood flow to your muscles and reduce the risk of injury.</li>
+        <li>Progressive Overload: Gradually increase the weight, frequency, or number of repetitions in your strength training routine to continue making gains in muscle size and strength.</li>
+        <li>Form and Technique: Focus on maintaining proper form to prevent injuries and maximize the effectiveness of each exercise.</li>
+        <li>Rest and Recovery: Allow 48 hours of rest between working the same muscle group to facilitate recovery and muscle growth.</li>
+        <li>Balanced Routine: Incorporate exercises that target all major muscle groups to ensure balanced development and prevent muscle imbalances.</li></ul></div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Cardio Blast
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><ul><li>Warm-up: Start with a 5-10 minute warm-up of light cardio.</li>
+        <li>Intensity: Aim for moderate to vigorous intensity. You should be able to talk but not sing.</li>
+        <li>Duration: Aim for at least 150 minutes of moderate-intensity or 75 minutes of high-intensity cardio per week.</li>
+        <li>Variety: Mix different types of cardio to avoid boredom and overuse injuries.</li>
+        <li>Cool-down: Finish with a 5-10 minute cool-down of light cardio and stretching.</li></ul></div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Yoga Flow
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><ul><li>Warm-up: Begin with a gentle warm-up to prepare your muscles and joints.</li>
+        <li>Breathing: Focus on deep, even breaths throughout your practice.</li>
+        <li>Alignment: Pay attention to the alignment of your body to prevent injury.</li>
+        <li>Progression: Start with basic poses and gradually progress to more advanced ones.</li>
+        <li>Comfort: If a pose causes pain, ease out of it and try a modification.</li></ul></div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+ <!-- Progress Tracking Section -->
+ <!-- <section id="progress" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Track Your Progress</h2>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+                <img src="/api/placeholder/600/400" alt="Progress Chart" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-lg-6">
+                <h3 class="mb-4">Your Fitness Journey</h3>
+                <div class="progress mb-3" style="height: 25px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Weight Goal: 75%</div>
+                </div>
+                <div class="progress mb-3" style="height: 25px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Strength Goal: 60%</div>
+                </div>
+                <div class="progress mb-3" style="height: 25px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Cardio Goal: 40%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+
+<h2 class="mb-4 pb-4 text-center text-decoration-underline" style="color: #005e0e;">Upcoming Workouts</h2>
+
+<div class="container d-flex">
+<div class="card w-50 me-4" aria-hidden="true">
+    <h5 class="text-center mt-4 fw-bold">Mind-Body Workouts</h5>
+    <!-- <img src="https://www.ifafitness.com/sports/images/sports-training.jpg" width="2%"  style="height: 200px;" class="card-img-top" alt="..."> -->
+    <div class="card-body pb-5">
+      <h5 class="card-title placeholder-glow">
+
+        <span class="placeholder col-6"></span>
+      </h5>
+      <p class="card-text placeholder-glow">
+        <span class="placeholder col-7"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-8"></span>
+      </p>
+      <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+    </div>
+  </div>
+<div class="card w-50" aria-hidden="true">
+    <h5 class="text-center mt-4 fw-bold">Sports-Specific Workouts</h5>
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+
+    <div class="card-body">
+      <h5 class="card-title placeholder-glow">
+        <span class="placeholder col-6"></span>
+      </h5>
+      <p class="card-text placeholder-glow">
+        <span class="placeholder col-7"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-8"></span>
+      </p>
+      <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+    </div>
+  </div>
+</div>
+
+
+
+ <!-- Community Section -->
+ <section id="community">
+     <div class="col-5 container border-1  w-50">
+         <h1 class="text-center m-3 pt-5 pb-2 link-success">Join Our Community</h1>
+         <div class="container d-flex justify-content-center">
+            <div class="col-2 btn btn-warning mb-2" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="This top tooltip is themed via CSS variables.">
+                Join
+            </div>
+        </div>
+        <h4 class="my-5 text-decoration-underline">Latest Community Posts</h4>
+        <ul class="list-group mb-5 pb-4 mt-4">
+            <li class="list-group-item py-4 d-flex justify-content-between">How to stay motivated during winter <span class="bg-primary text-white rounded-pill px-2 py-1">16 Comments</span></li>
+            <li class="list-group-item py-4 d-flex justify-content-between">Best post-workout meals<span class="bg-primary text-white rounded-pill px-2 py-1">36 Comments</span></li>
+            <li class="list-group-item py-4 d-flex justify-content-between">Share your transformation story<span class="bg-primary text-white rounded-pill px-2 py-1">17 Comments</span></li>
+        </ul><br>
+    </div>
+
+ </section>
+
+ <!-- footer -->
+
+ <footer class="text-center border-top border-top-5 border-secondary" >
+    <!-- Grid container -->
+    <div class="container pt-4" >
+      <!-- Section: Social media -->
+      <section class="mb-4 " >
+        <!-- Facebook -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1 focus-ring border rounded-5" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1 focus-ring border rounded-5" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1 focus-ring border rounded-5" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1 focus-ring border rounded-5" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <!-- <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1 focus-ring border rounded-5" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a> -->
+        <!-- Github -->
+        <!-- <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1 focus-ring border rounded-5" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github"></i
+        ></a> -->
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3  text-white" style="background-color: #005e0e;">
+      © 2024 Copyright :
+      <a class="text-white text-decoration-none" href="https://mdbootstrap.com/">FitTracker.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+</html>
